@@ -72,20 +72,13 @@ window.onload=function(e) {
 
 </script>
 </head>
+
 <body>
-  <div id="main">
-    <div class="header">
-      <h1>Wi-Fi Networks</h1>
-    </div>
-    <div id='navigation'>
-      <ul>
-        <li><a href="/index.tpl">Home</a></li>
-        <li><a href="/wifi">Networks</a></li>
-        <li><a href="/update-ffs.html">Files</a></li>
-        <li><a href="/settings.html">Settings</a></li>
-        <li><a href="/flash/index.html">Firmware</a></li>
-      </ul>
-    </div>
+<div id="page">
+  <div id="header">
+    <h1>Wi-Fi Networks</h1>
+  </div>
+  <div id="main" class="clearfix">
     <div id="content">
       <table>
         <tr>
@@ -117,19 +110,31 @@ window.onload=function(e) {
       <form name="wifiform" action="connect.cgi" method="post">
         <p>
           Select a network from the list, enter password (if needed) in field below and click connect.<br>
-          <div id="aps">Scanning...</div><br>
-          Wi-Fi password(if needed):<br>
-          <input type="text" name="passwd"><br>
-          <input type="submit" name="connect" value="Connect!">    
+        <div id="aps">Scanning...</div><br>
+        Wi-Fi password(if needed):<br>
+        <input type="text" name="passwd"><br>
+        <input type="submit" name="connect" value="Connect!">
         </p>
       </form>
     </div>
-    <div id="ack">&nbsp;</div>
+    <nav id='navigation'>
+      <input type="checkbox" id="resp" /><label for="resp"></label>
+      <ul>
+        <li><a href="../index.tpl">Home</a></li>
+        <li><a href="wifi.tpl">Networks</a></li>
+        <li><a href="../update-ffs.html">Files</a></li>
+        <li><a href="../settings.html">Settings</a></li>
+        <li><a href="../flash/index.html">Firmware</a></li>
+      </ul>
+    </nav>
   </div>
-  <div id="logo">
+  <div id="ack"></div>
+  <div id="footer">
     <a href="https://www.parallax.com">
-      <img src="/logo.png">
+      <img src="../logo.png">
     </a>
   </div>
+</div>
+
 </body>
 </html>
