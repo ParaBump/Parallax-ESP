@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html><head><title>Connecting...</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <script type="text/javascript" src="140medley.min.js"></script>
@@ -33,11 +34,35 @@ window.onload=function(e) {
 </script>
 </head>
 <body>
-<div id="main">
-<h2>Connecting to AP...</h2>
-<p>Status:<br />
-<div id="status">...</div>
-</p>
+<div id="page">
+  <div id="header">
+    <h1>Wifi Connecting...</h1>
+  </div>
+  <div id="main" class="clearfix">
+    <div id="content">
+      <h2>Connecting to AP...</h2>
+      <p>Status:<br />
+      <div id="status">...</div>
+      </p>
+    </div>
+    <nav id='navigation'>
+      <input type="checkbox" id="resp" /><label for="resp"></label>
+      <ul>
+        <li><a href="../index.tpl">Home</a></li>
+        <li><a href="wifi.tpl">Networks</a></li>
+        <li><a href="../update-ffs.html">Files</a></li>
+        <li><a href="../settings.html">Settings</a></li>
+        <li><a href="../flash/index.html">Firmware</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="ack"></div>
+  <div id="footer">
+    <a href="https://www.parallax.com">
+      <img src="../logo.png">
+    </a>
+  </div>
 </div>
+
 </body>
 </html>

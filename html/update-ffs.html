@@ -1,21 +1,14 @@
+<!DOCTYPE html>
 <html>
 <head><title>Parallax Wi-Fi Module Configuration - Update Flash Filesystem</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div id="main">
-    <div id="header">
-      <h1>File Uploads</h1>
-    </div>
-    <div id='navigation'>
-      <ul>
-        <li><a href="/index.tpl">Home</a></li>
-        <li><a href="/wifi">Networks</a></li>
-        <li><a href="/update-ffs.html">Files</a></li>
-        <li><a href="/settings.html">Settings</a></li>
-        <li><a href="/flash/index.html">Firmware</a></li>
-      </ul>
-    </div>
+  <div id="page">
+  <div id="header">
+    <h1>File Uploads</h1>
+  </div>
+  <div id="main" class="clearfix">
     <div id="content">
       <p>Here, you can upload files for the ESP8266 micro web server.  For example, if your
       ESP module's IP address is 192.168.4.1 and your file is mypage.html, use this page to
@@ -36,12 +29,23 @@
         </p>
       </form>
     </div>
-    <div id="ack">&nbsp;</div>
+    <nav id='navigation'>
+      <input type="checkbox" id="resp" /><label for="resp"></label>
+      <ul>
+        <li><a href="index.tpl">Home</a></li>
+        <li><a href="wifi/wifi.tpl">Networks</a></li>
+        <li><a href="update-ffs.html">Files</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="flash/index.html">Firmware</a></li>
+      </ul>
+    </nav>
   </div>
-  <div id="logo">
+    <div id="ack"></div>
+  <div id="footer">
     <a href="https://www.parallax.com">
-      <img src="/logo.png">
+      <img src="logo.png">
     </a>
+  </div>
   </div>
 
 <script type='text/javascript'>
