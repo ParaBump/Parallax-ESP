@@ -1,5 +1,7 @@
 <html>
-<head><title>Parallax Wi-Fi Module Configuration</title>
+<head>
+  <title>Parallax Wi-Fi Module Configuration</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
