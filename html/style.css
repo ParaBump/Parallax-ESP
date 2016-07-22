@@ -3,7 +3,7 @@ html{
   /* Declaration for all normalized fonts on the page */
   font-family:Calibri,Arial,Helvetica,Tahoma,Segoe,"Segoe UI",Verdana,sans-serif;
   /* 14px base font size. 16px x .875 = 14px */
-  font-size: 87.5%; /* 14px */
+  font-size: 100%; /* 16px */
   line-height: 1.3em;
 }
 * {
