@@ -72,6 +72,8 @@ body {
 }
 #header {
   height: 3em;
+  /* Some lengths of header titles overflow into content due to static height */
+  overflow: hidden;
 }
 #main {
   background-color: #EEEEEE;
